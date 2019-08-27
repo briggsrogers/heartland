@@ -5,11 +5,14 @@
   --squid-ink: #rgba(0,0,0,.9);
 }
 
+html{
+  margin: -8px;
+}
+
 body{
   font-family: 'EB Garamond', serif;
   background-color: var(--off-white);
   color: var(--squid-ink);
-  margin: 6vw;
 }
 
 h1{

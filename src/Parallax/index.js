@@ -5,7 +5,7 @@ export default class Parallax extends Component {
     constructor(props){
         super(props);
 
-        this.myRef = React.createRef();
+        //this.el = React.createRef();
 
         this.state = {
             translateY: 0
@@ -16,14 +16,14 @@ export default class Parallax extends Component {
 
         let self = this;
         
-        window.onscroll = function(e) {
+        window.addEventListener("scroll", function(e) {
 
             let intialOffset = window.pageYOffset;
 
             self.setState({
                 translateY: intialOffset * self.props.drag
             })
-        };
+        });
     }
         
     render() {
@@ -32,7 +32,7 @@ export default class Parallax extends Component {
 
         return (
             <div 
-            ref={this.el}
+            className = {'parallax-container'}
             style={{ transform: `translateY( ${translateY}px )` }}>
                 {this.props.children}
             </div>
