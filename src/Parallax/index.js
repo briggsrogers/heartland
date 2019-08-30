@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import './style.scss';
 
 export default class Parallax extends Component {
 
@@ -32,7 +34,7 @@ export default class Parallax extends Component {
 
         return (
             <div 
-            className = {'parallax-container'}
+            className = 'parallax-container'
             style={{ transform: `translateY( ${translateY}px )` }}>
                 {this.props.children}
             </div>
