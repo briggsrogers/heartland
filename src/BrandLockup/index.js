@@ -36,7 +36,7 @@ export default class BrandLockup extends Component {
     }
 
    componentWillUnmount() {
-    window.removeEventListener( "scroll", this.throttle(this.setIndex, 200) );
+        window.removeEventListener( "scroll", this.throttle(this.setIndex, 200) );
    }
 
    setIndex() {
@@ -69,7 +69,7 @@ export default class BrandLockup extends Component {
    }
 
     coinFlip() {
-        return (Math.floor(Math.random() * 2) == 0);
+        return (Math.floor(Math.random() * 9) == 0);
     }
 
     throttle(fn, wait) {

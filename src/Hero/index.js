@@ -18,16 +18,16 @@ export default class Hero extends Component {
                 </Parallax>
                 
                 
-                <span className={['intro']}>
+                <span className='intro'>
                     <h1>Heartland: A Trans-American Bike Trip</h1>
                 </span>
 
                 <BrandLockup/>
 
                 {/* <Parallax id={'outro'} drag={.1}> */}
-                    <span className={['outro']}>
-                        <h1>Words and photos from Brian Rogers</h1>
-                    </span>
+                <span className='outro'>
+                    <h1>Words and photos from Brian Rogers</h1>
+                </span>
                 {/* </Parallax> */}
     
             </div>

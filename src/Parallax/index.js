@@ -35,7 +35,11 @@ export default class Parallax extends Component {
         return (
             <div 
             className = 'parallax-container'
-            style={{ transform: `translateY( ${translateY}px )` }}>
+            style={
+                    { 
+                        transform: `translateY( ${translateY}px )`, 
+                    }
+                    }>
                 {this.props.children}
             </div>
         )

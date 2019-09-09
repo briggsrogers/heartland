@@ -1,0 +1,29 @@
+.type-container{
+    //width: 100%;
+    min-height: 300px;
+    margin: 24vw 14vw 24vw 14vw;
+
+    img{        
+        width: 3vw;
+        height: 3vw;
+        margin: 2vw;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    h1{
+        text-align: center;
+        color: var(--squid-ink);
+        margin: 40px 0 45px 0;
+    }
+
+    p{
+        color: var(--gray);
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+}

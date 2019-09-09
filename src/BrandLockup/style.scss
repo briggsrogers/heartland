@@ -1,6 +1,6 @@
 .brand-lockup-container{
     position: absolute;
-    top: 65vw;
+    top: 50%;
     display: flex;
     width: 100%;
     
@@ -18,5 +18,8 @@
         height: 3vw;
         margin: 2vw;
         object-fit: contain;
+
+        min-width: 30px;
+        min-height: 30px;
     }
 }

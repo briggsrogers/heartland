@@ -1,22 +1,25 @@
 .Container{
-
     position: relative;
     display: block;
     width: 100%;
+    overflow: hidden;
 
-    .type{
-        width: 100%;
-        position: absolute;
+    h1{
+        max-width: 60%;
+        text-align: center;
+        margin: 0 auto;
     }
+
     .intro{ 
         width: 100%;
         position: absolute;
         top: 25vw; 
     }
+
     .outro{ 
         width: 100%;
         position: absolute;
-        top: 105vw; 
+        top: 80%; 
     }
 
     .hero-image-intro{
@@ -27,5 +30,7 @@
         width: 95vw;
    
         object-fit: cover;
+
+        min-height: 100vh;
     }
 }
