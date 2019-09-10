@@ -7,7 +7,7 @@ export default class LocationSlate extends Component {
     render() {
         return (
             <div className='location-slate-container'>
-                <video muted loop src={nyc}></video>
+                <video muted loop autoPlay src={nyc}></video>
                 <div className="video-veil"></div>
                 <div className="slate-overlay">
                     <h1>New York</h1>

@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Gallery from './Gallery';
 import Hero from './Hero';
 import Type from './Type';
 import LocationSlate from './LocationSlate';
@@ -11,6 +13,8 @@ function App() {
       <Hero />
       <Type />
       <LocationSlate />
+      <Type />
+      <Gallery />
       <Type />
     </div>
   );

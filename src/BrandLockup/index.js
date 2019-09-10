@@ -32,7 +32,7 @@ export default class BrandLockup extends Component {
 
         let self = this;
         
-        window.addEventListener( "scroll", this.throttle(this.setIndex, 200) );
+        window.addEventListener( "scroll", this.throttle(this.setIndex, 100) );
     }
 
    componentWillUnmount() {
@@ -42,7 +42,7 @@ export default class BrandLockup extends Component {
    setIndex() {
 
     let noOfImages = images.length;
-    let docHeight = document.body.clientHeight;
+    let docHeight = window.innerHeight;
 
     let percentageScrolled = ((window.pageYOffset/docHeight ));
     let index = (Math.round( noOfImages * percentageScrolled) );

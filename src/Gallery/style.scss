@@ -1,0 +1,18 @@
+.gallery-container{
+
+    position: relative;
+    
+    height: 100vh;
+    width: 100%;
+    overflow-x: scroll;
+
+    display: flex;
+    flex-direction: row;
+
+    img{
+        height: calc(100% - 16vw);
+        margin: 8vw;
+    }
+
+
+}

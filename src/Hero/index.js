@@ -25,9 +25,9 @@ export default class Hero extends Component {
                 <BrandLockup/>
 
                 {/* <Parallax id={'outro'} drag={.1}> */}
-                <span className='outro'>
+                {/* <span className='outro'>
                     <h1>Words and photos from Brian Rogers</h1>
-                </span>
+                </span> */}
                 {/* </Parallax> */}
     
             </div>
