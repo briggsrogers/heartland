@@ -24,7 +24,7 @@ export default class Gallery extends Component {
             let xOffset = this.container.current.scrollLeft;
             let innerWidth = window.innerWidth;
             let pctOfWindowScrolled = (xOffset / innerWidth);
-            let twicePct = (pctOfWindowScrolled * 4);
+            let twicePct = (pctOfWindowScrolled * 6);
             
             let veilOpacity = twicePct > 1 ? 1 : twicePct;
 
@@ -39,18 +39,20 @@ export default class Gallery extends Component {
     
     render() {
         return (
-            <div 
-                className="gallery-container" 
-                ref={this.container}
-                style={
-                    { 
-                        backgroundColor: `rgba(43,43,43, ${this.state.veilOpacity} )`, 
-                    }}>
-                
-                <img src={img1} alt=""/>
-                <img src={img2} alt=""/>
-                <img src={img3} alt=""/>
-            </div>
+            <div className="gallery-container-outer">
+                <div 
+                    className="gallery-container" 
+                    ref={this.container}
+                    style={
+                        { 
+                            backgroundColor: `rgba(20,20,20, ${this.state.veilOpacity} )`, 
+                        }}>
+                    
+                    <img src={img1} alt=""/>
+                    <img src={img2} alt=""/>
+                    <img src={img3} alt=""/>
+                </div>
+            </div> 
         )
     }
 }

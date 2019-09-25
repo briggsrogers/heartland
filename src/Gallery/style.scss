@@ -1,8 +1,12 @@
+.gallery-container-outer{
+    background-color: var(--off-white);
+}
+
 .gallery-container{
 
     position: relative;
     
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     overflow-x: scroll;
 
@@ -10,8 +14,12 @@
     flex-direction: row;
 
     img{
-        height: calc(100% - 16vw);
-        margin: 8vw;
+        height: calc(100% - 20vw);
+        margin: 10vw;
+
+        &:last-child{
+            padding-right: 10vw;
+        }
     }
 
 

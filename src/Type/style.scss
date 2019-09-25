@@ -1,7 +1,13 @@
+.type-container-outer{
+    background: var(--off-white);
+}
+
 .type-container{
     //width: 100%;
     min-height: 300px;
-    margin: 24vw 14vw 24vw 14vw;
+    padding: 10vw 24vw 10vw 24vw;
+
+    background:var(--off-white);
 
     img{        
         width: 3vw;
@@ -24,6 +30,11 @@
     p{
         color: var(--gray);
         font-size: 18px;
-        line-height: 1.5em;
+        line-height: 1.8em;
+
+        &::first-letter {
+            font-size: 300%;
+            color: var(--clay);
+          }
     }
 }

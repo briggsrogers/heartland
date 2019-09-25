@@ -10,8 +10,9 @@ export default class LocationSlate extends Component {
                 <video muted loop autoPlay src={nyc}></video>
                 <div className="video-veil"></div>
                 <div className="slate-overlay">
-                    <h1>New York</h1>
-                    <img src="" alt=""/>
+                    <h1>New York City</h1>
+                    <h2>Day 1</h2>
+                    <h1>Mile 0</h1>
                 </div>
             </div>
         )

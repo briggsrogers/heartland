@@ -1,24 +1,25 @@
-/* @import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
 
-@font-face{
+/* @font-face{
   src: url('./fonts/EBGaramond-Medium.ttf');
   font-family: 'EBGaramond';
-}
+} */
 
 :root{
   --off-white: #F0F0F0;
   --squid-ink: #2B2B2B;
   --gray: #575757;
+  --clay: #EA502C;
 }
 
 body{
-  font-family: 'EBGaramond', serif;
+  font-family: 'EB Garamond', serif;
   background-color: var(--off-white);
   color: var(--squid-ink);
 }
 
 h1{
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   color: var(--off-white);
   font-weight: lighter;
